@@ -1,0 +1,24 @@
+# Workspace Specific
+/.idea
+/.env
+venv/
+
+# Python Specific
+*.pyc
+__pycache__/
+instance/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Build paths
+dist/
+build/
+
+# Database
+/app.db
+/discord.db
+/settings.py
+/discord.sqlite3
+.vscode
