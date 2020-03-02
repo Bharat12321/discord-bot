@@ -1,6 +1,7 @@
 import os
 import requests
 import settings
+import asyncio
 from discord.ext.commands import Bot
 from sqlalchemy import create_engine, text
 from model import search_history, engine
@@ -8,6 +9,7 @@ from model import search_history, engine
 bot = Bot(command_prefix=settings.COMMAND_PREFIX)
     
 def run():
+    asyncio.set_event_loop(asyncio.new_event_loop())
     bot.run(settings.BOT_TOKEN)
 
 @bot.event
