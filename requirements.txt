@@ -1,5 +1,4 @@
-#git+https://github.com/Rapptz/discord.py@rewrite
-Flask
-Flask-SQLAlchemy
-requests
+Flask==1.1.1
+requests==2.23.0
+SQLAlchemy==1.3.13
 discord.py==0.16.12
